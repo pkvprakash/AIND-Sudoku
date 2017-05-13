@@ -3,11 +3,17 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: Step 1. Identify the units containing naked twins.
+   Step 2. Now, none of the boxes other than naked twin pair in the unit can have any of the two values in the pair as candidates. Identify such boxes.
+   Step 3. Eliminate the values from the pers of naked twin pairs in such units
+   Step 4. After Step 3, some boxes may contain only one candidate or other naked twin pairs are created
+   Step 5. iterate over eliminate(), naked_twins(), only_choice() to form the constraint propagation 
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: Step 1. include dia_units also to unitlist. (there will be two diagonal units)
+   Step 2. in eliminate(), naked_twins() and only_choice(), we have to consider the two diagonal units as well along with other units (row, column and square)
+
 
 ### Install
 

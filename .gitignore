@@ -1,3 +1,10 @@
 .DS_Store
 __pycache__
 *.pyc
+.idea
+
+*.ipynb
+.ipynb_checkpoints
+.idea/*
+*.zip
+*.json
